@@ -1,0 +1,118 @@
+.session-page {
+  font-family: sans-serif;
+  background-color: #F3F3F3;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // this avoid scrolling on login page
+  height: 99vh;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  border-top: solid 4px #2dbe60;
+  overflow: hidden;
+
+}
+
+.session-form-wrapper {
+  // height: 300px;
+  width: 385px;
+  max-width: 385px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: stretch;
+  border: 1px solid rgb(222,222,222);
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  // margin-top: 100px;
+  padding: 10px 0;
+}
+
+.session-form {
+  margin: 10px 0px 10px 0px;
+}
+
+
+.form-logo {
+  // display: inline-block;
+  background: url("/logo.png") no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 120px;
+  height: 120px;
+  // background-color: yellow;
+  padding: 0px 0px 0px 0px;
+}
+
+
+.form-title {
+  font-family: serif;
+  text-align: center;
+  font-size: 28px;
+  // font-weight: bold;
+  font-family: Times, serif;
+  color: #6a6a6a;
+  padding: 0px 0px 20px 0px;
+}
+
+.username, .password, .submit-login {
+  border: 1px solid #cacaca;
+  color: #3b3b3b;
+  border-radius: 7px;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 10px 10px 10px 15px;
+  padding: 10px;
+}
+
+.submit-login {
+  background-color: #2dbe60;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-login:hover {
+  background-color: rgb(31, 174, 82);
+}
+
+.demo-button {
+  background-color: #2dbe60;
+  color: #ffffff;
+  font-weight: bold;
+  border: 1px solid #cacaca;
+  border-radius: 7px;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 10px 10px 10px 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.demo-button:hover {
+  background-color: rgb(31, 174, 82);
+}
+
+.session-link {
+  margin: 5px;
+  color: #2dbe60;
+}
+
+.error-messages {
+  color: #F51010;
+  margin: 5px;
+  height: 16px;
+}
+
+.session-link-prompt {
+  margin: 5px;
+  color: #747474;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 0.91666667rem;
+}

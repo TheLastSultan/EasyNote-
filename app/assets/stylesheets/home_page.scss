@@ -1,0 +1,139 @@
+.home-page {
+  font-family: sans-serif;
+  overflow: hidden;
+  font-weight: 400;
+  background-color: #FFFFFF;
+  background-size: auto;
+  width: 100%;
+  // avoid home page scrolling issue
+  height: 99vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+}
+
+.home-body-area {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-bar-area {
+  // height: 15%;
+  // nav bar height
+  padding: 5px 0 5px;
+  border-bottom: 1px solid rgb(222,222,222);
+  margin: 10px 10px 0px 10px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  // nav button postion
+  margin: 0 120px;
+  align-items: center;
+}
+
+.nav-bar-singup {
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #000;
+  padding: 10px;
+}
+
+.nav-bar-singup:hover {
+  color: #2dbe60;
+  border: 1px solid #2dbe60;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  .nav-logo {
+    background: url("/logo.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0px 0px 5px 0px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav-bar-title {
+    font-family: "Gotham_SSm_3r", Helvetica, Arial, sans-serif;
+    color: #2dbe60;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0px 0px 0px;
+  }
+}
+
+// section {
+//   margin: auto;
+// }
+
+.section-left {
+  flex: 1;
+  border-right: solid 1px rgb(222,222,222);
+}
+.section-left > .session-page {
+  flex: 1;
+  border-top: none;
+  background-color: #ffffff;
+  height: 85vh;
+  margin: auto;
+
+  .form-logo {
+    display: none;
+  }
+}
+
+.section-right {
+  flex: 1;
+  justify-content: center;
+  // image here is free for use from this site:
+  // https://www.pexels.com/photo/blur-business-coffee-commerce-273222/
+  background: url('/main_page_background.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-font-smoothing: antialiased;
+  // image position
+  margin-right: 70px;
+  margin-bottom: 40px;
+
+  .splash-area  {
+    padding-top: 100px;
+    margin: auto;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+
+    h3 {
+      font-family: "Gotham_SSm_5r", Helvetica, Arial, sans-serif;
+      font-size: 32px;
+      padding: 20px 20px;
+      line-height: 42px;
+      text-shadow: 2px 2px #000;
+      // text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    }
+    p {
+      font-family: sans-serif;
+      // font-family: "webfont";
+      font-size: 18px;
+      line-height: 21px;
+      text-shadow: 1px 1px #000;
+      // text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    }
+  }
+}
+
+
+.footer-area {
+  padding: 20px 0 20px;
+  border-top: 1px solid rgb(222,222,222);
+  margin: 5px 10px 10px 10px;
+  color: #cacaca;
+  font-size: 12px;
+}

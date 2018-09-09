@@ -1,0 +1,71 @@
+.main-page {
+  height: 98vh;
+  width: 99vw;
+  display: flex;
+  // align-items: center;
+
+}
+
+.nav-side-bar-area {
+  position: absolute;
+}
+
+.notes-index-area {
+  position: relative;
+  // width of side nav bar
+  left: 73px;
+  // width of notes index container
+  width: 310px;
+  height: 98vh;
+  border-right: 1px solid #ececec;
+  overflow-y: auto;
+}
+
+.notes-editing-area {
+  position: relative;
+  left: 73px;
+  // // width: 100%;
+  // flex: auto;
+  // overflow: scroll;
+
+}
+
+.notes-editing-area > .rich-text-editor{
+  // .done-button {
+  //   position: absolute;
+  //   right: 185px;
+  // }
+  //
+  // .cancel-button {
+  //   position: absolute;
+  //   right: 95px;
+  // }
+}
+
+// these are to get rid of scrolling issue
+.notes-editing-area > .rich-text-editor {
+  .quill {
+    max-width: 820px;
+    padding-left: 20px;
+  }
+  .note-title {
+    // width: 61vw;
+    // fix the toolbar picker overflow issue
+    // top: 68px;
+    // move title in editor in container, same as select input
+    left: 35px;
+  }
+
+  .selected-notebook {
+    left: 20px;
+  }
+
+  .tag-area-on-form {
+    margin: 0 3px 0 20px;
+  }
+}
+
+// get rid of focus outline
+select:focus, button:focus {
+  outline: none;
+}

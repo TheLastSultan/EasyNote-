@@ -1,0 +1,122 @@
+.notebooks-modal-area  {
+  display: none;
+  position: absolute;
+  top: 0;
+  // using 74px instead of 73px so the border would not be hidden
+  left: 74px;
+  width: 98vw;
+  // opacity: 0.8
+  background-color: rgba(255,255,255,0.8);
+  z-index: 2;
+  height: 98vh;
+}
+
+.is-open {
+  display: block;
+}
+
+// notebooks index area
+.notebooks-index-area {
+  // transition-timing-function: linear;
+  border-right: 3px solid #ececec;
+  background-color: rgba(255,255,255,1);
+  width: 395px;
+  // 310px
+  height: 98vh;
+  overflow-y: auto;
+}
+
+.notebooks-index {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  border-bottom: 1px solid #ececec;
+
+  input {
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    margin: 0 20px;
+    // color: #e1e1e1;
+    padding: 8px;
+    text-align: center;
+  }
+}
+
+.notebooks-index-title {
+  // rgb(236,236,236)
+  font-family: helvetica, arial, sans-serif;
+  display: flex;
+  padding: 21px 24px 16px;
+  justify-content: space-between;
+
+  h3 {
+    color: #878787;
+    font-size: 21px;
+    font-family: helvetica, arial, sans-serif;
+  }
+
+  .add-notebook-icon {
+    color: #6a6a6a;
+    cursor: pointer;
+  }
+
+  .add-notebook-icon:hover {
+    color: #878787;
+  }
+}
+
+// single notebook item
+.notebooks-index-wrapper {
+}
+
+.notebooks-index-item {
+  border-bottom: 1px solid #ececec;
+  margin: 0 12px;
+  height: 61px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+
+  // notebooks index title
+  h3 {
+    color: #4a4a4a;
+    font-family: times, serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+  }
+
+  // notes count for each notebook
+  p {
+    color: #ababab;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 8px 11px;
+  }
+
+  .notebook-delete-icon {
+    float: right;
+    padding-top: 5px;
+    display: none;
+  }
+}
+
+.notebooks-index-item:hover {
+  background-color: rgba(43, 181, 92, 0.9);
+  overflow: hidden;
+  cursor: pointer;
+  border-bottom: none;
+  padding-bottom: 1px;
+
+  .notebook-delete-icon {
+    color: #ffffff;
+    display: inline-block;
+  }
+
+  .notebook-delete-icon:hover {
+    color: #ececec;
+  }
+
+  h3, p {
+    color: #ffffff;
+  }
+}

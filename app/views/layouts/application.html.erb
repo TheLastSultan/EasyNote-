@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EasyNote</title>
+    <%= csrf_meta_tags %>
+
+    <!-- favicon -->
+    <%= favicon_link_tag asset_path('logo.png'), :rel => 'icon', :type =>  'image/png' %>
+
+    <!-- add this to user google material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- quill -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

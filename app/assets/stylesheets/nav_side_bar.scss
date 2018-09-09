@@ -1,0 +1,58 @@
+.side-bar-area {
+  // might not need this
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //
+  height: 100vh;
+  width: 73px;
+  border-right: 1px solid rgb(222,222,222);
+  background-color: #F3F3F3;
+
+  .side-bar-logo {
+    width: 80px;
+    height: 80px;
+    padding-left: 5px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .material-icons {
+    font-size: 48px;
+  }
+
+  .logout-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    color: #6a6a6a;
+    cursor: pointer;
+  }
+
+  .logout-icon:hover {
+    color: #878787;
+  }
+
+  .plus-icon, .notes-icon, .notebooks-icon, .tags-icon {
+    color: #6a6a6a;
+    cursor: pointer;
+  }
+
+  .plus-icon:hover, .notes-icon:hover, .notebooks-icon:hover, .tags-icon:hover {
+    color: #878787;
+  }
+
+  .notes-icon {
+    margin-top: 50px;
+  }
+
+  .notebooks-icon {
+    margin-top: 20px;
+    font-size: 45px;
+  }
+
+  .tags-icon {
+    margin-top: 23px;
+  }
+
+}

@@ -1,0 +1,130 @@
+.notes-index-title {
+  height: 100px;
+  border-bottom: 1px solid #ececec;
+  font-family: helvetica, arial, sans-serif;
+  // margin: 10px;
+
+  h3 {
+    color: #878787;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 300;
+    vertical-align: top;
+    letter-spacing: 0.5px;
+    padding: 20px 25px 0 25px;
+  }
+
+  p {
+    color: #ababab;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 20px 25px;
+  }
+
+}
+
+.notes-index-item {
+  height: 120px;
+  border-bottom: 1px solid #ececec;
+  overflow: hidden;
+  margin: 0 15px;
+  // title
+  h3 {
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 16px;
+    font-stretch: 100%;
+    // margin-bottom: 4px;
+    font-family: times, serif;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    line-height: 20px;
+    padding: 10px;
+  }
+
+  //body
+  p {
+    color: #ababab;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    padding: 5px 10px 5px 10px;
+  }
+}
+
+.delete-icon {
+  float: right;
+  padding-top: 10px;
+  display: none;
+}
+
+.notes-index-item:hover {
+  background-color: rgba(43, 181, 92, 0.9);
+  overflow: hidden;
+  cursor: pointer;
+  border-bottom: none;
+  padding-bottom: 1px;
+
+  h3, p {
+    color: #ffffff;
+  }
+
+  .delete-icon {
+      color: #ffffff;
+      display: inline-block;
+    }
+
+  .delete-icon:hover {
+    color: #ececec;
+  }
+}
+
+// the following part is the fill in all background 
+// .notes-index-wrapper:hover {
+//   background-color: rgba(43, 181, 92, 0.9);
+//   overflow: hidden;
+//   cursor: pointer;
+//
+//   .notes-index-item {
+//     // fix the background toggling issue
+//     border-bottom: none;
+//     padding-bottom: 1px;
+//     h3, p {
+//       color: #ffffff;
+//     }
+//   }
+//
+//   .delete-icon {
+//     color: #ffffff;
+//     display: inline-block;
+//   }
+//
+//   .delete-icon:hover {
+//     color: #ececec;
+//   }
+// }
+
+.click-notes-index-item {
+  border: 3px solid #878787;
+}
+
+// .notes-index-wrapper::selection {
+//   border: 3px solid #878787;
+// }
+
+// .notes-index-item:hover {
+//   background-color: rgba(43, 181, 92, 0.9);
+//   cursor: pointer;
+//   h3, p {
+//     color: #ffffff;
+//   }
+// }
+
+// body head
+// rgb(135,135,135)
+
+// title
+// rgb(74,74,74)

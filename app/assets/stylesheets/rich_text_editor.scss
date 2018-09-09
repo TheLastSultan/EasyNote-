@@ -1,0 +1,212 @@
+.rich-text-editor {
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  // width: 100%;
+  // align-items: center;
+  // justify-content: space-around;
+  overflow: hidden;
+}
+
+.rich-text-editor-button-area {
+  height: 29px;
+  padding: 12px 0;
+  // position: absolute;
+  // right: 5px;
+  display: block;
+}
+
+.custom-edit-area {
+  display: flex;
+  align-items: center;
+  top: 50px;
+  position: relative;
+}
+
+.selected-notebook {
+  border: 1px solid #ccc;
+  font-size: 12px;
+  // align-items: center;
+  position: relative;
+
+  // left: 180px;
+  // top: 20px;
+  // left: 50px;
+  // top: 20px;
+  // display: inline-block;
+}
+
+.tag-area-on-form {
+  display: flex;
+  input {
+    color: #606060;
+    background-color: #f8f8f8;
+    vertical-align: top;
+    border: 1px solid #ececec;
+    padding: 1px 8px 1px;
+    border-radius: 4px;
+    // width: 30px;
+    width: max-content;
+    margin: 0 3px 0 10px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      color: #606060;
+      background-color: #f8f8f8;
+      vertical-align: top;
+      border: 1px solid #ececec;
+      padding: 1px 8px 1px;
+      border-radius: 4px;
+      // width: 30px;
+      display: inline-block;
+      width: max-content;
+      margin: 0 3px;
+      text-align: center;
+    }
+
+    li:hover {
+      background-color: #2dbe60;
+      color: #ffffff;
+      font-size: 12px;
+    }
+  }
+}
+
+
+.done-button, .cancel-button {
+  background-color: #2dbe60;
+  color: #fff;
+  border: 1px solid #2dbe60;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 26px;
+  line-height: 26px;
+  width: 70px;
+  margin: auto;
+}
+
+.done-button:hover, .cancel-button:hover {
+  background-color: rgb(31, 174, 82);
+}
+
+.done-button {
+  position: absolute;
+  right: 95px;
+}
+
+// .done-button:disabled {
+//   opacity: 0.5;
+//   background-color: #2dbe60;
+//   cursor: auto;
+// }
+
+.cancel-button {
+  position: absolute;
+  right: 15px;
+}
+
+.rich-text-editor-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // tune the position of toolbar relative to top
+  margin-top: -60px;
+}
+
+// .note-title {
+//   border: none;
+//   position: relative;
+//   // top: 72px;
+//   top: 100px;
+//   margin-top: 25px;
+//   font-size: 24px;
+//   // width: 75%;
+//   // margin-left: auto;
+//   // margin-right: auto;
+//   padding-left: 25px;
+//   max-width: 960px;
+//   width: 80vw;
+//   color: #2dbe60;
+//   font-family: times, serif;
+// }
+
+
+.note-title {
+    border: none;
+    position: relative;
+    top: 80px;
+    margin-top: 25px;
+    font-size: 24px;
+    left: 15px;
+    max-width: 960px;
+    // width: 80vw;
+    color: #2dbe60;
+    font-family: times, serif;
+}
+
+
+
+.note-title::placeholder {
+  color: #2dbe60;
+}
+
+.note-title:focus {
+  outline: none;
+}
+
+.quill {
+  max-width: 960px;
+  min-width: 240px;
+  height: 75vh;
+  width: 80vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.ql-toolbar.ql-snow {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ccc;
+  // toolbar border
+  height: 35px;
+  // overflow: hidden;
+}
+
+.ql-container.ql-snow {
+  border: none;
+}
+
+// .ql-snow .ql-picker
+// toolbar size
+.ql-snow.ql-toolbar button svg {
+  height: 70%;
+}
+
+// offset the editor so that title can be under tool bar
+.ql-editor {
+  margin-top: 45px;
+}
+
+// bypass css reset for following styling
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+u {
+  text-decoration: underline;
+}
+s {
+  text-decoration: line-through;
+}
